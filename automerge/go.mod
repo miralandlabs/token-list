@@ -1,4 +1,4 @@
-module github.com/solana-labs/token-list/automerge
+module github.com/miralandlabs/token-list/automerge
 
 go 1.17
 

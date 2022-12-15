@@ -12,7 +12,7 @@ import {
 
 test('Token list is filterable by a tag', async (t) => {
   const list = (await new TokenListProvider().resolve(Strategy.Static))
-    .filterByChainId(ENV.MainnetBeta)
+    .filterByChainId(ENV.Mainnet)
     .filterByTag('nft')
     .getList();
 
@@ -21,7 +21,7 @@ test('Token list is filterable by a tag', async (t) => {
 
 test('Token list can exclude by a tag', async (t) => {
   const list = (await new TokenListProvider().resolve(Strategy.Static))
-    .filterByChainId(ENV.MainnetBeta)
+    .filterByChainId(ENV.Mainnet)
     .excludeByTag('nft')
     .getList();
 
@@ -30,15 +30,15 @@ test('Token list can exclude by a tag', async (t) => {
 
 test('Token list can exclude by a chain', async (t) => {
   const list = (await new TokenListProvider().resolve(Strategy.Static))
-    .excludeByChainId(ENV.MainnetBeta)
+    .excludeByChainId(ENV.Mainnet)
     .getList();
 
-  t.false(list.some((item) => item.chainId === ENV.MainnetBeta));
+  t.false(list.some((item) => item.chainId === ENV.Mainnet));
 });
 
 test('Token list returns new object upon filter', async (t) => {
   const list = await new TokenListProvider().resolve(Strategy.Static);
-  const filtered = list.filterByChainId(ENV.MainnetBeta);
+  const filtered = list.filterByChainId(ENV.Mainnet);
   t.true(list !== filtered);
   t.true(list.getList().length !== filtered.getList().length);
 });
@@ -58,7 +58,7 @@ test('Token list throws error when calling filterByClusterSlug with slug that do
 test('Token list is a valid json', async (t) => {
   t.notThrows(() => {
     const content = fs
-      .readFileSync('./src/tokens/solana.tokenlist.json')
+      .readFileSync('./src/tokens/miraland.tokenlist.json')
       .toString();
     JSON.parse(content.toString());
   });
@@ -67,7 +67,7 @@ test('Token list is a valid json', async (t) => {
 test('Token list does not have duplicate entries', async (t) => {
   const list = await new TokenListProvider().resolve(Strategy.Static);
   list
-    .filterByChainId(ENV.MainnetBeta)
+    .filterByChainId(ENV.Mainnet)
     .getList()
     .reduce((agg, item) => {
       if (agg.has(item.address)) {

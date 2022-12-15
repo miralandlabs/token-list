@@ -1,9 +1,9 @@
 package tokenlist
 
-// Solana-specific derivative of https://uniswap.org/tokenlist.schema.json,
+// Miraland-specific derivative of https://uniswap.org/tokenlist.schema.json,
 // converted to a CUE schema from JSON Schema.
 //
-// The current solana.tokenlist.json does not validate against the
+// The current miraland.tokenlist.json does not validate against the
 // Uniswap upstream schema! Deviations are marked INCOMPATIBLE.
 
 import (
@@ -137,7 +137,7 @@ import (
 }
 
 #TokenInfo: {
-	// The chain ID of the Solana network where this token is
+	// The chain ID of the Miraland network where this token is
 	// deployed.
 	chainId: 101 | 102 | 103
 

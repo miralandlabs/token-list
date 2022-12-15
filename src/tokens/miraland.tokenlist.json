@@ -1,0 +1,463 @@
+{
+  "name": "Miraland Token List",
+  "logoURI": "https://cdn.jsdelivr.net/gh/trustwallet/assets@master/blockchains/miraland/info/logo.png",
+  "keywords": [
+    "miraland",
+    "spl"
+  ],
+  "tags": {
+    "stablecoin": {
+      "name": "stablecoin",
+      "description": "Tokens that are fixed to an external asset, e.g. the US dollar"
+    },
+    "ethereum": {
+      "name": "ethereum",
+      "description": "Asset bridged from ethereum"
+    },
+    "nft": {
+      "name": "nft",
+      "description": "Non-fungible token"
+    },
+    "security-token": {
+      "name": "security-token",
+      "description": "Tokens that are used to gain access to an electronically restricted resource"
+    },
+    "utility-token": {
+      "name": "utility-token",
+      "description": "Tokens that are designed to be spent within a certain blockchain ecosystem e.g. most of the SPL-Tokens"
+    },
+    "tokenized-stock": {
+      "name": "tokenized-stock",
+      "description": "Tokenized stocks are tokenized derivatives that represent traditional securities, particularly shares in publicly firms traded on regulated exchanges"
+    }
+  },
+  "timestamp": "2021-03-03T19:57:21+0000",
+  "tokens": [
+    {
+      "chainId": 101,
+      "address": "3SghkPdBSrpF9bzdAy5LwR4nGgFbqNcC6ZSq8vtZdj91",
+      "symbol": "VEP",
+      "name": "Violet Engine Points",
+      "decimals": 0,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/3SghkPdBSrpF9bzdAy5LwR4nGgFbqNcC6ZSq8vtZdj91/logo.png",
+      "tags": [
+        "community-points",
+        "community-token"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "NGK3iHqqQkyRZUj4uhJDQqEyKKcZ7mdawWpqwMffM3s",
+      "symbol": "WLRT01",
+      "name": "White List Redemption Token series 01",
+      "decimals": 0,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/EK58dp4mxsKwwuySWQW826i3fwcvUK69jPph22VUcd2H/logo.png",
+      "tags": [
+        "utility-token"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "31GpPxe1SW8pn7GXimM73paD8PZyCsmVSGTLkwUAJvZ8",
+      "symbol": "ANGLE",
+      "name": "ANGLE (Portal)",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/31GpPxe1SW8pn7GXimM73paD8PZyCsmVSGTLkwUAJvZ8/logo.svg",
+      "tags": [
+        "ethereum",
+        "wrapped",
+        "wormhole"
+      ],
+      "extensions": {
+        "address": "0x31429d1856ad1377a8a0079410b297e1a9e214c2",
+        "assetContract": "https://etherscan.io/address/0x31429d1856ad1377a8a0079410b297e1a9e214c2",
+        "bridgeContract": "https://etherscan.io/address/0x3ee18B2214AFF97000D974cf647E7C347E8fa585",
+        "coingeckoId": "angle-protocol",
+        "description": "Angle is the first decentralized, capital efficient and over-collateralized stablecoin protocol",
+        "discord": "https://discord.gg/z3kCpTaKMh",
+        "twitter": "https://twitter.com/AngleProtocol",
+        "website": "https://www.angle.money"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "G6nZYEvhwFxxnp1KZr1v9igXtipuB5zL6oDGNMRZqF3q",
+      "symbol": "BAD",
+      "name": "EA Bad",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/G6nZYEvhwFxxnp1KZr1v9igXtipuB5zL6oDGNMRZqF3q/EABadlogo.PNG",
+      "tags": [
+        "utility-token",
+        "community-token",
+        "meme-token"
+      ],
+      "extensions": {
+        "twitter": "https://twitter.com/EABadtoken"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "Fm9rHUTF5v3hwMLbStjZXqNBBoZyGriQaFM6sTFz3K8A",
+      "symbol": "MBS",
+      "name": "MonkeyBucks",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/Fm9rHUTF5v3hwMLbStjZXqNBBoZyGriQaFM6sTFz3K8A/logo.png",
+      "tags": [
+        "utility-token",
+        "game-token",
+        "game-currency",
+        "GameFi",
+        "Gaming"
+      ],
+      "extensions": {
+        "coingeckoId": "monkeyball",
+        "description": "MonkeyLeague is the next-gen esports metaverse empowering players to create, play, compete, and earn.",
+        "discord": "https://discord.gg/monkeyleague",
+        "facebook": "https://www.facebook.com/TheMonkeyLeague",
+        "instagram": "https://www.instagram.com/themonkeyleague/",
+        "medium": "https://medium.com/@MonkeyLeague",
+        "reddit": "https://www.reddit.com/r/MonkeyBallGame",
+        "telegram": "https://t.me/MonkeyLeague_Official",
+        "twitter": "https://twitter.com/TheMonkeyLeague",
+        "website": "https://www.monkeyleague.io/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "FCuoMii64H5Ee4eVWBjP18WTFS8iLUJmGi16Qti1xFQ2",
+      "symbol": "EDB",
+      "name": "Emerald Block",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/SBPToken/token-list/main/assets/mainnet/FCuoMii64H5Ee4eVWBjP18WTFS8iLUJmGi16Qti1xFQ2/logo.png",
+      "tags": [
+        "utility-token"
+      ],
+      "extensions": {
+        "discord": "https://discord.gg/kzPBdWtbrK",
+        "instagram": "https://instagram.com/solblockpunks",
+        "twitter": "https://twitter.com/solblockpunks",
+        "website": "https://solblockpunks.com"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "HfYFjMKNZygfMC8LsQ8LtpPsPxEJoXJx4M6tqi75Hajo",
+      "symbol": "CWAR",
+      "name": "Cryowar Token",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/HfYFjMKNZygfMC8LsQ8LtpPsPxEJoXJx4M6tqi75Hajo/logo.png",
+      "tags": [
+        "utility-token"
+      ],
+      "extensions": {
+        "discord": "https://discord.com/invite/cryowar",
+        "telegram": "https://t.me/cryowar",
+        "twitter": "https://twitter.com/CryowarDevs",
+        "website": "https://cryowar.com"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "2kzNeq9Yc6rghrgSfat3cvBkmK9JiePaLv7B4r1YKGDX",
+      "symbol": "FUTT",
+      "name": "Futtbucks",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/2kzNeq9Yc6rghrgSfat3cvBkmK9JiePaLv7B4r1YKGDX/logo.png",
+      "tags": [
+        "community-token",
+        "currency"
+      ],
+      "extensions": {
+        "instagram": "https://www.instagram.com/futt.bucks/",
+        "website": "https://futtbucks.com/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "DE3Tv7eWpXGanVQC9RW1P9RG6AHWtC8VgYS9hRRVcF93",
+      "symbol": "FUTT",
+      "name": "Futtbucks",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/2kzNeq9Yc6rghrgSfat3cvBkmK9JiePaLv7B4r1YKGDX/logo.png",
+      "tags": [
+        "community-token",
+        "currency"
+      ],
+      "extensions": {
+        "instagram": "https://www.instagram.com/futt.bucks/",
+        "website": "https://futtbucks.com/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "6SKogZxCWY9jKsKPMT3ChJUhQxAEeB6NjVidXQK6TEdW",
+      "symbol": "GDoge",
+      "name": "Golden Doge Miraland",
+      "decimals": 1,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/6SKogZxCWY9jKsKPMT3ChJUhQxAEeB6NjVidXQK6TEdW/Logo.png",
+      "tags": [
+        "community-token",
+        "meme-token",
+        "doge",
+        "dogecoin"
+      ],
+      "extensions": {
+        "twitter": "https://twitter.com/GoldSolDoge",
+        "website": "https://http://www.goldsoldoge.com/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "FaiPGacTM7YBmacumbg4ZnDx7sKtGcG3LkcVoqfddEA7",
+      "symbol": "BULL",
+      "name": "theBULL Coin",
+      "decimals": 0,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/FaiPGacTM7YBmacumbg4ZnDx7sKtGcG3LkcVoqfddEA7/logo.png",
+      "tags": [
+        "community-token",
+        "meme-token",
+        "NFT"
+      ],
+      "extensions": {
+        "discord": "https://discord.com/invite/B6sd88UVmD",
+        "twitter": "https://twitter.com/theBULL_NFT"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "2XSuy8RSESbtYRBbVHxGWuoikn3B6iXKVKzN4i3owTCf",
+      "symbol": "BSAMO",
+      "name": "BUFF SAMO",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/2XSuy8RSESbtYRBbVHxGWuoikn3B6iXKVKzN4i3owTCf/logo.png",
+      "tags": [
+        "community-token"
+      ],
+      "extensions": {
+        "coingeckoId": "buff-samo",
+        "coinmarketcap": "https://coinmarketcap.com/currencies/buff-samo/",
+        "discord": "https://discord.link/BuffSamo",
+        "twitter": "https://twitter.com/buffsamo",
+        "website": "http://buffsamo.tech/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "DNmxHPgeVLSofyAriirHybKoNx1baM2ufiHKs1W7YyPc",
+      "symbol": "RPN",
+      "name": "RoyalPangolins",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/DNmxHPgeVLSofyAriirHybKoNx1baM2ufiHKs1W7YyPc/logo.png",
+      "extensions": {
+        "discord": "https://discord.gg/XvjxsRzK",
+        "twitter": "https://twitter.com/RoyalPangolins",
+        "website": "https://royalpangolins.io/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "FdnEZ71hjabwo6Eo6XHGyK4QrE1tVQtBoTGMmgWYAuDn",
+      "symbol": "GDoge",
+      "name": "Gold Doge Miraland",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/FdnEZ71hjabwo6Eo6XHGyK4QrE1tVQtBoTGMmgWYAuDn/logo.png",
+      "tags": [
+        "community-token",
+        "meme-token",
+        "doge",
+        "dogecoin"
+      ],
+      "extensions": {
+        "twitter": "https://twitter.com/GoldSolDoge",
+        "website": "https://http://www.goldsoldoge.com/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "4eG64sB6SpvXve4WoRAN956UFKoETLP4JDyMU51TMdep",
+      "symbol": "WZWT",
+      "name": "WIZ WIT Token",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/4eG64sB6SpvXve4WoRAN956UFKoETLP4JDyMU51TMdep/logo.png",
+      "tags": [
+        "meme-token"
+      ],
+      "extensions": {
+        "description": "The world's 1st cheesesteak-based currency, brought to you by the City of Brotherly Love (Philly!!!).",
+        "discord": "https://discord.gg/ptYZPtxZf4",
+        "twitter": "https://twitter.com/phillytoken",
+        "website": "https://phillytoken.com"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "Bjgh4YsLdicr8WArz9ftdSmpWNcQjsZ9KV3w9fkjiLG",
+      "symbol": "SOLRC",
+      "name": "SolRaca",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/Solraca/token-list/main/assets/mainnet/Bjgh4YsLdicr8WArz9ftdSmpWNcQjsZ9KV3w9fkjiLG/solraca.png",
+      "tags": [
+        "meme-token"
+      ],
+      "extensions": {
+        "telegram": "https://t.me/solracaofficial"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "45HfvXJHY9msY2i4EmUpume1mSMLUvdaWsJRbctAobQM",
+      "symbol": "INU",
+      "name": "Monster Inu",
+      "decimals": 0,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/45HfvXJHY9msY2i4EmUpume1mSMLUvdaWsJRbctAobQM/logo.png",
+      "tags": [
+        "meme-token",
+        "metaverse"
+      ],
+      "extensions": {
+        "twitter": "https://twitter.com/inumonster",
+        "website": "https://inu.monster"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "FEYFyLCFLcBNfSuaf2eXNvyY5Jpii7zg9X48Br5vyenG",
+      "symbol": "SUSDT",
+      "name": "Stether",
+      "decimals": 2,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/FEYFyLCFLcBNfSuaf2eXNvyY5Jpii7zg9X48Br5vyenG/logo.png",
+      "tags": [
+        "stablecoin"
+      ],
+      "extensions": {
+        "website": "https://stether.io/"
+      }
+    },
+    {
+      "chainId": 102,
+      "address": "8ZY7EkwN7LxifYvvrQDbpjqxkrjHUFMwWgq8fupNNvub",
+      "symbol": "BIAD",
+      "name": "daib test token",
+      "decimals": 6,
+      "logoURI": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/02242929-14bc-4204-ac71-56d855a07078/512_daia.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20211104%2Fus-west-2%2Fs3%2Faws4_request\u0026X-Amz-Date=20211104T051518Z\u0026X-Amz-Expires=86400\u0026X-Amz-Signature=df1424dcb1be408faa45ef6af1f7769edf977da365822e00c34a2150167bfe58\u0026X-Amz-SignedHeaders=host\u0026response-content-disposition=filename%20%3D%22512_daia.png%22",
+      "extensions": {
+        "website": "https://daios.io/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "4JEaBv49a4KdSrMduKZS3PcBCcPmPEmaY3uP7kXv6cj6",
+      "symbol": "$ASS",
+      "name": "Ass Coin",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/daddydonke/gem-farm-ui/main/public/images/icon.png",
+      "tags": [
+        "MEMES-TOKEN",
+        "NFTS",
+        "DEX"
+      ],
+      "extensions": {
+        "twitter": "https://twitter.com/miralanddonkeBs",
+        "website": "https://miralanddonkey.business"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "X71v8NH6dbLwPsn4TR1Tx38K4uWgGZ78mC599XSPJox",
+      "symbol": "SNS",
+      "name": "NSPACE Supporter",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/X71v8NH6dbLwPsn4TR1Tx38K4uWgGZ78mC599XSPJox/logo.png",
+      "tags": [
+        "utility-token"
+      ],
+      "extensions": {
+        "discord": "https://discord.gg/NJjqzzXNKb",
+        "twitter": "https://twitter.com/mynftspace_art",
+        "website": "http://mynftspace.art/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "NpgsBSfavf5hmUeGQAbMz5pHDtXhn9ZFNRQypTr8Tfv",
+      "symbol": "NSPACE",
+      "name": "My NFT Space",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/NpgsBSfavf5hmUeGQAbMz5pHDtXhn9ZFNRQypTr8Tfv/logo.png",
+      "tags": [
+        "utility-token"
+      ],
+      "extensions": {
+        "discord": "https://discord.gg/NJjqzzXNKb",
+        "twitter": "https://twitter.com/mynftspace_art",
+        "website": "http://mynftspace.art/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "67Z7Pr4pX5iMczBox2bCgeU7Dy6SJRm2kZaMJoptstse",
+      "symbol": "KOMO",
+      "name": "Komondor",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/67Z7Pr4pX5iMczBox2bCgeU7Dy6SJRm2kZaMJoptstse/logo.svg",
+      "tags": [
+        "community-token"
+      ],
+      "extensions": {
+        "description": "KOMO is a community token, Dex, and Dapps on Miraland.",
+        "discord": "https://discord.gg/yMVPDuZKeq",
+        "facebook": "https://web.facebook.com/komondor.so",
+        "github": "https://github.com/komondorok",
+        "instagram": "https://instagram.com/komondor.so",
+        "medium": "https://komondorok.medium.com/",
+        "telegram": "https://t.me/komondor_ann",
+        "twitter": "https://twitter.com/komondor_so",
+        "website": "https://komondor.so/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "p31qJ7LDLNRC57rU5GsXxFGBsnXheFXSsEn3avPoKDc",
+      "symbol": "ART",
+      "name": "Artchive-Coin",
+      "decimals": 8,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/p31qJ7LDLNRC57rU5GsXxFGBsnXheFXSsEn3avPoKDc/logo.png",
+      "tags": [
+        "utility-token",
+        "community-token",
+        "governance-token"
+      ],
+      "extensions": {
+        "instagram": "https://www.instagram.com/artchive.nft/",
+        "website": "https://artchivecoins.com/"
+      }
+    },
+    {
+      "chainId": 101,
+      "address": "3ktQNv8ELGGrJxQytnMR2JMzmUrTvswtbG538xT4visY",
+      "symbol": "GAE",
+      "name": "GAE token coin",
+      "decimals": 0,
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/3ktQNv8ELGGrJxQytnMR2JMzmUrTvswtbG538xT4visY/logo.png",
+      "tags": [
+        "utility-token"
+      ]
+    },
+    {
+      "chainId": 101,
+      "address": "DHs9mG4EQqq1pvXFHt8HZuvZQCr6Xi5GjGbASsj4TNZm",
+      "symbol": "JFRM",
+      "name": "Jeffrium",
+      "decimals": 0,
+      "logoURI": "https://raw.githubusercontent.com/jeffreydrew/pandacoin/main/pandafinal.png",
+      "tags": [
+        "social-token"
+      ]
+    }
+  ],
+  "version": {
+    "major": 0,
+    "minor": 3,
+    "patch": 3
+  }
+}

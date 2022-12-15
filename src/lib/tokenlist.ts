@@ -1,9 +1,9 @@
 import { fetch } from 'cross-fetch';
 
-import tokenlist from './../tokens/solana.tokenlist.json';
+import tokenlist from './../tokens/miraland.tokenlist.json';
 
 export enum ENV {
-  MainnetBeta = 101,
+  Mainnet = 101,
   Testnet = 102,
   Devnet = 103,
 }
@@ -54,14 +54,14 @@ export interface TokenInfo {
 export type TokenInfoMap = Map<string, TokenInfo>;
 
 export const CLUSTER_SLUGS: { [id: string]: ENV } = {
-  'mainnet-beta': ENV.MainnetBeta,
-  testnet: ENV.Testnet,
-  devnet: ENV.Devnet,
+  'mainnet-mln': ENV.Mainnet,
+  'testnet-mln': ENV.Testnet,
+  'devnet-mln': ENV.Devnet,
 };
 
 export class GitHubTokenListResolutionStrategy {
   repositories = [
-    'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/solana.tokenlist.json',
+    'https://raw.githubusercontent.com/miralandlabs/token-list/main/src/tokens/miraland.tokenlist.json',
   ];
 
   resolve = () => {
@@ -71,7 +71,7 @@ export class GitHubTokenListResolutionStrategy {
 
 export class CDNTokenListResolutionStrategy {
   repositories = [
-    'https://cdn.jsdelivr.net/gh/solana-labs/token-list@latest/src/tokens/solana.tokenlist.json',
+    'https://cdn.jsdelivr.net/gh/miralandlabs/token-list@latest/src/tokens/miraland.tokenlist.json',
   ];
 
   resolve = () => {
@@ -79,8 +79,8 @@ export class CDNTokenListResolutionStrategy {
   };
 }
 
-export class SolanaTokenListResolutionStrategy {
-  repositories = ['https://token-list.solana.com/solana.tokenlist.json'];
+export class MiralandTokenListResolutionStrategy {
+  repositories = ['https://token-list.miraland.top/miraland.tokenlist.json'];
 
   resolve = () => {
     return queryJsonFiles(this.repositories);
@@ -96,7 +96,7 @@ const queryJsonFiles = async (files: string[]) => {
         return json;
       } catch {
         console.info(
-          `@solana/token-registry: falling back to static repository.`
+          `@miraland/token-registry: falling back to static repository.`
         );
         return tokenlist;
       }
@@ -111,7 +111,7 @@ const queryJsonFiles = async (files: string[]) => {
 export enum Strategy {
   GitHub = 'GitHub',
   Static = 'Static',
-  Solana = 'Solana',
+  Miraland = 'Miraland',
   CDN = 'CDN',
 }
 
@@ -125,7 +125,7 @@ export class TokenListProvider {
   static strategies = {
     [Strategy.GitHub]: new GitHubTokenListResolutionStrategy(),
     [Strategy.Static]: new StaticTokenListResolutionStrategy(),
-    [Strategy.Solana]: new SolanaTokenListResolutionStrategy(),
+    [Strategy.Miraland]: new MiralandTokenListResolutionStrategy(),
     [Strategy.CDN]: new CDNTokenListResolutionStrategy(),
   };
 
@@ -139,7 +139,7 @@ export class TokenListProvider {
 }
 
 export class TokenListContainer {
-  constructor(private tokenList: TokenInfo[]) {}
+  constructor(private tokenList: TokenInfo[]) { }
 
   filterByTag = (tag: string) => {
     return new TokenListContainer(

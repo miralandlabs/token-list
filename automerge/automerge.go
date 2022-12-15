@@ -19,8 +19,8 @@ import (
 	"github.com/go-git/go-git/v5/plumbing/object"
 	"github.com/go-git/go-git/v5/storage/memory"
 	"github.com/google/go-github/v40/github"
-	"github.com/solana-labs/token-list/automerge/auth"
-	"github.com/solana-labs/token-list/automerge/parser"
+	"github.com/miralandlabs/token-list/automerge/auth"
+	"github.com/miralandlabs/token-list/automerge/parser"
 	"github.com/sourcegraph/go-diff/diff"
 	"golang.org/x/net/context/ctxhttp"
 	"golang.org/x/oauth2"
@@ -57,7 +57,7 @@ type Automerger struct {
 }
 
 const (
-	tokenlistPath = "src/tokens/solana.tokenlist.json"
+	tokenlistPath = "src/tokens/miraland.tokenlist.json"
 	appId         = int64(152533)
 )
 
@@ -340,12 +340,12 @@ func (m *Automerger) parseDiff(md []*diff.FileDiff) ([]string, *diff.FileDiff, e
 			}
 
 			assets = append(assets, newFile)
-		case newFile == "src/tokens/solana.tokenlist.json":
+		case newFile == "src/tokens/miraland.tokenlist.json":
 			if tlDiff != nil {
 				return nil, nil, fmt.Errorf("found multiple tokenlist diffs")
 			}
 			tlDiff = z
-			klog.V(1).Infof("found solana.tokenlist.json")
+			klog.V(1).Infof("found miraland.tokenlist.json")
 		case newFile == "CHANGELOG.md" || newFile == "package.json":
 			klog.V(1).Infof("ignoring spurious %s change", newFile)
 			continue
@@ -381,7 +381,7 @@ func (m *Automerger) commitTokenDiff(tt []parser.Token, pr *github.PullRequest, 
 
 	// request and write out assets to file
 	for _, asset := range assets {
-		uri := fmt.Sprintf(`https://raw.githubusercontent.com/solana-labs/token-list/%s/%s`, pr.GetHead().GetSHA(), asset)
+		uri := fmt.Sprintf(`https://raw.githubusercontent.com/miralandlabs/token-list/%s/%s`, pr.GetHead().GetSHA(), asset)
 		klog.V(1).Infof("downloading asset %s", uri)
 		resp, err := http.Get(uri)
 		if err != nil {
@@ -755,7 +755,7 @@ func (m *Automerger) processTokenlist(ctx context.Context, d *diff.FileDiff, ass
 }
 
 func verifyLogoURI(uri string, file []string) error {
-	prefix := "https://raw.githubusercontent.com/solana-labs/token-list/main/"
+	prefix := "https://raw.githubusercontent.com/miralandlabs/token-list/main/"
 	if strings.HasPrefix(uri, prefix+"assets/") {
 		// When a local asset is specified, check if it's part of the PR before checking remotely
 		for _, f := range file {
@@ -831,8 +831,8 @@ var (
 // the app's identity rather than GITHUB_TOKEN, allowing subsequent
 // workflows to trigger.
 func configureLocalGitRemoteToken(token string) {
-	// git remote add --push origin https://your_username:${token}@github.com/solana-labs/token-list.git
-	remote := fmt.Sprintf("https://token-list-automerger:%s@github.com/solana-labs/token-list.git", token)
+	// git remote add --push origin https://your_username:${token}@github.com/miralandlabs/token-list.git
+	remote := fmt.Sprintf("https://token-list-automerger:%s@github.com/miralandlabs/token-list.git", token)
 	cmd := exec.Command("git", "remote", "add", "app", remote)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
@@ -854,7 +854,7 @@ func main() {
 			klog.Exitf("failed to decode GITHUB_APP_PEM as base64: %v", err)
 		}
 
-		t, err := auth.GetInstallationToken([]byte(key), appId, "solana-labs")
+		t, err := auth.GetInstallationToken([]byte(key), appId, "miralandlabs")
 		if err != nil {
 			klog.Exitf("failed to get installation token: %v", err)
 		}
@@ -869,7 +869,7 @@ func main() {
 
 	klog.Info("starting automerge")
 
-	m := NewAutomerger("solana-labs", "token-list", token, *flagDryRun)
+	m := NewAutomerger("miralandlabs", "token-list", token, *flagDryRun)
 
 	klog.Info("initializing virtual Git worktree")
 	if err := m.InitRepo(); err != nil {
