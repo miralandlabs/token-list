@@ -1,7 +1,7 @@
 {
   "name": "@solarti/spl-token-registry",
-  "version": "0.2.0",
-  "description": "Soarti Token Registry derived from Miraland Token Registry",
+  "version": "0.2.1",
+  "description": "Legacy: Soarti Token Registry derived from Miraland Token Registry",
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",
   "module": "dist/module/index.js",
