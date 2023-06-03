@@ -1,6 +1,6 @@
 {
   "name": "@solarti/spl-token-registry",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Legacy: Solarti Token Registry derived from Miraland Token Registry",
   "main": "dist/main/index.js",
   "typings": "dist/main/index.d.ts",

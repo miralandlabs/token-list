@@ -126,11 +126,11 @@
     },
     {
       "chainId": 101,
-      "address": "WLRTATcxCSMzwLDRA8VUi52Hi7enSSQnWUpEj1zRag3",
-      "symbol": "WLRT",
-      "name": "White List Redemption Token",
+      "address": "WLRCtfwY8P1k8H3yGNwk1LMhwum6hDRwrdMkbXq3eDb",
+      "symbol": "WLRC",
+      "name": "White List Redemption Coupon",
       "decimals": 0,
-      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/WLRTATcxCSMzwLDRA8VUi52Hi7enSSQnWUpEj1zRag3/logo.jpg",
+      "logoURI": "https://raw.githubusercontent.com/miralandlabs/token-list/main/assets/mainnet/WLRCtfwY8P1k8H3yGNwk1LMhwum6hDRwrdMkbXq3eDb/logo.jpg",
       "tags": [
         "utility-token"
       ]
@@ -138,7 +138,7 @@
   ],
   "version": {
     "major": 0,
-    "minor": 3,
-    "patch": 3
+    "minor": 5,
+    "patch": 1
   }
 }
