@@ -130,7 +130,9 @@ export class TokenListProvider {
   };
 
   resolve = async (
-    strategy: Strategy = Strategy.CDN
+    // MI
+    // strategy: Strategy = Strategy.CDN
+    strategy: Strategy = Strategy.GitHub
   ): Promise<TokenListContainer> => {
     return new TokenListContainer(
       await TokenListProvider.strategies[strategy].resolve()
